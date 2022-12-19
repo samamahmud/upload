@@ -1,0 +1,83 @@
+.main {
+    height: 550px;
+    width: 1034px;
+    margin: auto;
+    background-color: white;
+    /* display: flex; */
+    /* flex: 0 0 1034px; */
+}
+
+.main p {
+    font-weight: bold;
+    font-style: normal;
+    color: grey;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+
+.images {
+    position: absolute;
+    width: 18%;
+    margin-top: 78px;
+    margin-left: 70px;
+}
+
+.camera {
+    position: absolute;
+    width: 18%;
+    margin-top: 78px;
+    margin-left: 30%;
+}
+
+.drag {
+    width: 900px;
+    height: 330px;
+    outline: 3px #317ac7 dashed;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 67px;
+
+}
+
+.drag img {
+    width: 10%;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 42%;
+    margin-top: 10%;
+}
+
+.drag h3 {
+    color: grey;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 22%;
+
+}
+
+.drag p {
+    color: blue;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    margin-left: 42%;
+    margin-top: 25%;
+    cursor: pointer;
+}
+
+.upload_button {
+    width: 10%;
+    height: 7%;
+    position: absolute;
+    left: 76%;
+    top: 83%;
+    cursor: pointer;
+    border: none;
+    background-color: #317ac7;
+    border-radius: 20px;
+    color: white;
+
+}
