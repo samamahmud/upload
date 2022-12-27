@@ -12,15 +12,21 @@
 <body>
     <div class="main">
         <p>Upload Shot</p>
-        <!-- <div class="img">
-            <img src="../images/images.png">
-        </div>
-        <div class="camera">
-            <img src="../images/camera.png">
-        </div> -->
-        <img src="images/images.png" class="images">
-        <img src="images/camera.png" class="camera">
 
+
+
+        <!-- =========================== accsess images ======================================== -->
+        <input type="image" class="images" src="images/images.png"
+            onclick="document.getElementById('selectedimg').click();">
+        <input type="file" accept=".gif, .jpeg, .png" id="selectedimg" style="display: none;" />
+
+
+        <!-- =========================== accsess camera ======================================== -->
+        <input type="image" class="camera" src="images/camera.png"
+            onclick="document.getElementById('accsess_camera').click();">
+        <input type="file" accept="image/*, .gif, .jpeg, .png" capture="camera" id="accsess_camera"
+            style="display: none;" />
+        <!-- ======================================================================================================= -->
         <div class="drag">
             <img src="images/download.png">
             <h3>Drag & Drop To Upload</h3>
@@ -31,6 +37,7 @@
         </div>
         <button class="upload_button">Upload</button>
     </div>
+
 
 </body>
 
