@@ -24,10 +24,14 @@
         <div class="drag">
             <img src="images/download.png">
             <h3>Drag & Drop To Upload</h3>
-            <p>Or Browse</p>
+
+            <input type="file" id="selectedFile" style="display: none;" />
+            <input type="button" value="Or browse" class="browse"
+                onclick="document.getElementById('selectedFile').click();" />
         </div>
         <button class="upload_button">Upload</button>
     </div>
+
 </body>
 
 </html>

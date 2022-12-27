@@ -2,9 +2,8 @@
     height: 550px;
     width: 1034px;
     margin: auto;
-    background-color: white;
-    /* display: flex; */
-    /* flex: 0 0 1034px; */
+    background-color: rgb(137, 132, 132);
+
 }
 
 .main p {
@@ -58,26 +57,133 @@
 
 }
 
-.drag p {
-    color: blue;
-    font-size: 18px;
+
+.browse {
+    color: #317ac7;
+
     font-weight: normal;
     position: absolute;
     margin-left: 42%;
     margin-top: 25%;
     cursor: pointer;
+    border: none;
+    background-color: white;
 }
+
 
 .upload_button {
     width: 10%;
     height: 7%;
     position: absolute;
-    left: 76%;
-    top: 83%;
+    /* left: 76%; */
+    margin-left: 65%;
+    margin-top: 39%;
     cursor: pointer;
     border: none;
     background-color: #317ac7;
     border-radius: 20px;
     color: white;
 
+}
+
+
+@media(max-width: 1226px) {
+
+    .images,
+    .camera {
+        margin-top: 56px;
+    }
+
+    .drag {
+        width: 791px;
+    }
+
+
+    .upload_button {
+        margin-left: 61%;
+        margin-top: 40%;
+    }
+
+}
+
+@media(max-width : 900px) {
+    .main {
+        width: 875px;
+    }
+
+    .images,
+    .camera {
+        width: 23%;
+        margin-top: 60px;
+    }
+
+    .camera {
+        margin-left: 45%;
+    }
+
+    .drag {
+        width: 790px;
+        margin-top: 14%;
+    }
+
+
+    .upload_button {
+        margin-top: 55%;
+
+        margin-left: 86%;
+    }
+
+}
+
+
+@media(max-width : 600px) {
+    .main {
+        width: 560px;
+    }
+
+    .drag {
+        width: 434px;
+        margin-top: 26%;
+        margin-left: 23px;
+    }
+
+    .images,
+    .camera {
+        width: 35%;
+        margin-top: 65px;
+    }
+
+    .images {
+        margin-left: 14px;
+    }
+
+    .camera {
+        margin-left: 56%;
+    }
+
+    .drag h3 {
+        margin-left: 31%;
+    }
+
+    .drag img {
+        margin-left: 46%;
+    }
+
+    .browse {
+        margin-left: 43%;
+        margin-top: 32%;
+    }
+
+
+    .upload_button {
+        width: 19%;
+        margin-top: 83%;
+        margin-left: 57%;
+
+
+    }
+
+    .main p {
+        margin-left: 17px;
+    }
 }
