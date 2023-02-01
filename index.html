@@ -7,9 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>upload</title>
     <link rel="stylesheet" href="upload.css">
+    <script src="js/uploadjquery.js"></script>
+
+    <!-- <script>
+        $(".camera").click(function () {
+            $(".drag").css("display", "none");
+            $("#videoCam").css("display", "block");
+        })
+
+
+
+    </script> -->
+
 </head>
 
 <body>
+
     <div class="main">
         <p>Upload Shot</p>
 
@@ -22,10 +35,11 @@
 
 
         <!-- =========================== accsess camera ======================================== -->
-        <input type="image" class="camera" src="images/camera.png"
-            onclick="document.getElementById('accsess_camera').click();">
+        <video id="videoCam"></video>
+        <input type="image" class="camera" src="images/camera.png" onclick="openCam()">
         <input type="file" accept="image/*, .gif, .jpeg, .png" capture="camera" id="accsess_camera"
             style="display: none;" />
+
         <!-- ======================================================================================================= -->
         <div class="drag">
             <img src="images/download.png">
@@ -35,10 +49,10 @@
             <input type="button" value="Or browse" class="browse"
                 onclick="document.getElementById('selectedFile').click();" />
         </div>
-        <button class="upload_button">Upload</button>
+        <button class="upload_button" type="submit">Upload</button>
     </div>
 
-
+    <script src="js/upload.js"></script>
 </body>
 
 </html>
